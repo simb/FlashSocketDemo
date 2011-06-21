@@ -17,7 +17,6 @@
 			
 			protected function application1_creationCompleteHandler(event:FlexEvent):void
 			{
-				// TODO Auto-generated method stub
 				socket = new FlashSocket("ws://192.168.0.3:8124/socket.io/flashsocket");
 				socket.addEventListener(FlashSocketEvent.MESSAGE, onMessage);
 			}
